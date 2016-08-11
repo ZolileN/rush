@@ -1,0 +1,49 @@
+<%= form_for(order) do |f| %>
+  <% if order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pick_up %>
+    <%= f.text_field :pick_up %>
+  </div>
+
+  <div class="field">
+    <%= f.label :drop_off %>
+    <%= f.text_field :drop_off %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :vehicle_type %>
+    <%#= f.collection_radio_buttons :vehicle_type, VehicleType.all  %>
+
+    <%= f.collection_radio_buttons :vehicle_type, VehicleType.all.collect, :id, :name %>
+
+  </div>
+
+
+
+
+
+  <div class="field">
+    <%= f.label :pick_up_at %>
+    <%= f.datetime_select :pick_up_at %>
+  </div>
+
+
+
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

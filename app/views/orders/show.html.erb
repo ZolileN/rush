@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pick up:</strong>
+  <%= @order.pick_up %>
+</p>
+
+<p>
+  <strong>Drop off:</strong>
+  <%= @order.drop_off %>
+</p>
+
+<p>
+  <strong>Pick up at:</strong>
+  <%= @order.pick_up_at %>
+</p>
+
+<p>
+  <strong>Drop off at:</strong>
+  <%= @order.drop_off_at %>
+</p>
+
+<p>
+  <strong>Referances:</strong>
+  <%= @order.referances %>
+</p>
+
+<p>
+  <strong>Referances:</strong>
+  <%= @order.referances %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @order.status %>
+</p>
+
+<p>
+  <strong>Accepted at:</strong>
+  <%= @order.accepted_at %>
+</p>
+
+<p>
+  <strong>Completed at:</strong>
+  <%= @order.completed_at %>
+</p>
+
+<p>
+  <strong>Canceled at:</strong>
+  <%= @order.canceled_at %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

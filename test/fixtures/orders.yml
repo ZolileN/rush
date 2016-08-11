@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pick_up: MyString
+  drop_off: MyString
+  pick_up_at: 2016-08-04 19:07:57
+  drop_off_at: 2016-08-04 19:07:57
+  referances: 
+  referances: 
+  status: 1
+  accepted_at: 2016-08-04 19:07:57
+  completed_at: 2016-08-04 19:07:57
+  canceled_at: 2016-08-04 19:07:57
+
+two:
+  pick_up: MyString
+  drop_off: MyString
+  pick_up_at: 2016-08-04 19:07:57
+  drop_off_at: 2016-08-04 19:07:57
+  referances: 
+  referances: 
+  status: 1
+  accepted_at: 2016-08-04 19:07:57
+  completed_at: 2016-08-04 19:07:57
+  canceled_at: 2016-08-04 19:07:57
